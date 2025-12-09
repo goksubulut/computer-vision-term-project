@@ -1,0 +1,34 @@
+# GitHub'a Yükleme Komutları
+# Bu komutları PowerShell'de sırayla çalıştırın
+
+# 1. Git repository'yi başlat
+git init
+
+# 2. Tüm dosyaları ekle
+git add .
+
+# 3. İlk commit
+git commit -m "Initial commit: Term project - Image Classification with MobileNetV2 and 10-fold CV"
+
+# 4. GitHub'da repository oluşturduktan sonra, remote ekle
+# (KULLANICI-ADI ve REPOSITORY-ADI kısımlarını kendi bilgilerinizle değiştirin)
+git remote add origin https://github.com/KULLANICI-ADI/REPOSITORY-ADI.git
+
+# 5. Branch'i main olarak ayarla
+git branch -M main
+
+# 6. GitHub'a gönder
+git push -u origin main
+
+# ============================================
+# NOT: Eğer authentication sorunu yaşarsanız:
+# ============================================
+# GitHub artık password kabul etmiyor, Personal Access Token kullanmanız gerekiyor
+# 
+# Token oluşturma:
+# 1. GitHub.com > Settings > Developer settings > Personal access tokens > Tokens (classic)
+# 2. "Generate new token (classic)" tıklayın
+# 3. "repo" scope'unu seçin
+# 4. Token'ı kopyalayın
+# 5. git push yaparken password yerine bu token'ı kullanın
+
