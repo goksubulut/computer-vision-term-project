@@ -3,22 +3,47 @@
 [![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Completed-success.svg)](https://github.com/goksubulut/computer-vision-term-project)
 
 Bu proje, transfer learning kullanarak X-ray görüntülerinde kırık (fracture) ve normal (normal) sınıflarını ayırt eden bir görüntü sınıflandırma sistemidir. MobileNetV2 mimarisi ve 10-fold Stratified Cross-Validation kullanılmıştır.
 
+## ✨ Özellikler
+
+- 🚀 **Transfer Learning:** ImageNet'te önceden eğitilmiş MobileNetV2 kullanımı
+- 📊 **10-Fold CV:** Stratified Cross-Validation ile güvenilir model değerlendirmesi
+- 🔄 **Data Augmentation:** Overfitting'i önlemek için çeşitli augmentasyon teknikleri
+- ⚡ **Optimizasyon:** Early stopping, learning rate scheduling ve model checkpointing
+- 🎯 **Hızlı Eğitim:** GPU ile fold başına 5 dakikanın altında eğitim süresi
+- 📈 **Detaylı Raporlama:** Her fold için accuracy ve genel istatistikler
+
 ## 📋 İçindekiler
 
-- [Proje Açıklaması](#term-project-image-classification-with-transfer-learning)
+- [Özellikler](#-özellikler)
+- [Proje Açıklaması](#proje-açıklaması)
+- [Teknolojiler](#-teknolojiler)
 - [Gereksinimler](#gereksinimler)
-- [Kurulum](#kurulum)
-- [Kullanım](#kullanım)
+- [Kurulum](#-kurulum)
+- [Kullanım](#-kullanım)
 - [Metodoloji](#metodoloji)
-- [Sonuçlar](#sonuçlar)
-- [Lisans](#lisans)
+- [Sonuçlar](#-sonuçlar)
+- [Akademik Referans](#akademik-referans)
+- [Yazar](#-yazar)
+- [Lisans](#-lisans)
 
 ## Proje Açıklaması
 
 Bu proje, transfer learning kullanarak X-ray görüntülerinde kırık (fracture) ve normal (normal) sınıflarını ayırt eden bir görüntü sınıflandırma sistemidir. MobileNetV2 mimarisi ve 10-fold Stratified Cross-Validation kullanılmıştır.
+
+## 🛠️ Teknolojiler
+
+Bu proje aşağıdaki teknolojiler ve kütüphaneler kullanılarak geliştirilmiştir:
+
+- **Deep Learning Framework:** TensorFlow 2.x / Keras
+- **Model Architecture:** MobileNetV2 (Transfer Learning)
+- **Data Processing:** NumPy, PIL (Pillow)
+- **Machine Learning:** scikit-learn (StratifiedKFold)
+- **Data Pipeline:** tf.data API
+- **Platform:** Google Colab (GPU support)
 
 ## Gereksinimler
 
@@ -57,8 +82,8 @@ Proje aşağıdaki dizin yapısını beklemektedir:
 ### GitHub'dan Klonlama
 
 ```bash
-git clone https://github.com/kullanici-adi/repository-adi.git
-cd repository-adi
+git clone https://github.com/goksubulut/computer-vision-term-project.git
+cd computer-vision-term-project
 ```
 
 ## 📖 Kullanım
@@ -208,7 +233,17 @@ Mean ± Std (%): 86.25% ± 2.34%
 
 Bu proje aşağıdaki akademik makaleye referans verir:
 
-[Referans makale bilgileri buraya eklenecek - PDF'den alınacak]
+**DOI:** 10.1002/ima.22849
+
+**Başlık:** Image processing and machine learning-based bone fracture detection and classification using X-ray images
+
+**Yazar:** Muhammet Emin Şahin
+
+**Kurum:** Department of Computer Engineering, Yozgat Bozok University, Yozgat, Turkey
+
+**Email:** emin.sahin@bozok.edu.tr
+
+**Makale Linki:** [Wiley Online Library](https://onlinelibrary.wiley.com/doi/abs/10.1002/ima.22849)
 
 ## Sorun Giderme
 
@@ -254,9 +289,11 @@ term_project_submission.py
 └── main()                   # Ana fonksiyon (10-fold CV)
 ```
 
-## İletişim
+## 📞 İletişim & Destek
 
-Sorularınız için lütfen öğretim üyesi ile iletişime geçin.
+- 💬 **Sorularınız için:** GitHub'da [Issue](https://github.com/goksubulut/computer-vision-term-project/issues) açabilirsiniz
+- 🤝 **Katkıda Bulunmak:** Pull request göndermekten çekinmeyin
+- 📧 **Öğretim Üyesi:** Ders ile ilgili sorular için öğretim üyesi ile iletişime geçin
 
 ## 📊 Sonuçlar
 
@@ -273,15 +310,52 @@ Bu bir term projesidir. Katkılar için lütfen issue açın veya pull request g
 
 ## 📝 Lisans
 
-Bu proje [MIT License](LICENSE) altında lisanslanmıştır.
+Bu proje [MIT License](LICENSE) altında lisanslanmıştır. Kod ve dokümantasyon açık kaynak olarak paylaşılmaktadır.
+
+**Not:** Bu bir akademik term projesidir. Eğitim ve öğrenme amaçlı kullanım için uygundur.
 
 ## 👤 Yazar
 
-- **Öğrenci Adı** - [GitHub Profili](https://github.com/kullanici-adi)
+### Göksu Bulut
+
+- 🎓 **Eğitim:** Computer Vision dersi kapsamında geliştirilmiş term projesi
+- 💻 **GitHub:** [@goksubulut](https://github.com/goksubulut)
+- 🔗 **Repository:** [computer-vision-term-project](https://github.com/goksubulut/computer-vision-term-project)
+- 📧 **İletişim:** GitHub üzerinden issue açarak veya pull request göndererek iletişime geçebilirsiniz
+
+### Proje Hakkında
+
+Bu proje, Computer Vision dersi kapsamında transfer learning ve cross-validation tekniklerini uygulamalı olarak öğrenmek amacıyla geliştirilmiştir. X-ray görüntülerinde kemik kırığı tespiti gibi tıbbi görüntü analizi uygulamalarında deep learning modellerinin kullanımını göstermektedir.
+
+### İlgi Alanları
+
+- 🤖 Deep Learning & Neural Networks
+- 👁️ Computer Vision & Image Processing
+- 🏥 Medical Image Analysis
+- 📊 Machine Learning & Data Science
 
 ## 🙏 Teşekkürler
 
-- TensorFlow/Keras ekibine
-- scikit-learn ekibine
-- Google Colab ekibine
+- **TensorFlow/Keras** ekibine - Harika bir deep learning framework sağladıkları için
+- **scikit-learn** ekibine - Cross-validation ve diğer ML araçları için
+- **Google Colab** ekibine - Ücretsiz GPU erişimi sağladıkları için
+- **Akademik Topluluk** - Açık kaynak araştırmalar ve paylaşımlar için
+- **Öğretim Üyesi** - Proje sürecindeki rehberlik için
+
+## 📚 İlgili Projeler
+
+Bu projeyi beğendiyseniz, aşağıdaki konularda da projeler geliştirmeyi planlıyorum:
+
+- 🔬 Daha gelişmiş augmentation teknikleri
+- 🎯 Fine-tuning optimizasyonları
+- 📱 Mobil uygulama entegrasyonu
+- 🌐 Web tabanlı demo uygulaması
+
+## ⭐ Proje İstatistikleri
+
+- 📝 **Kod Satırı:** ~440 satır Python
+- 📦 **Dosya Sayısı:** 1 ana Python dosyası
+- ⏱️ **Eğitim Süresi:** Fold başına ~4-5 dakika (GPU ile)
+- 🎯 **Model Mimarisi:** MobileNetV2 (Transfer Learning)
+- 📊 **Validation Yöntemi:** 10-Fold Stratified Cross-Validation
 
